@@ -1,0 +1,71 @@
+.app-icon-bell-cover,
+.app-icon-envelop-cover {
+    width: 100%;
+    height: 100%;
+}
+
+.app-icon-bell,
+.app-icon-envelop {
+    color: white !important;
+    width: 24px;
+    height: 24px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: lightblue;
+    padding: 1px;
+}
+
+.header_container {
+    width: 100%;
+    height: 100%;
+    background-color: lightcoral;
+    display: grid;
+    grid-template-columns: 300px 3fr 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+/* Brand */
+.header_brand {
+    width: 100%;
+    height: 100%;
+}
+
+.header_brand_test {
+    font-weight: 800;
+}
+
+/* Search */
+.header_search {
+    width: 100%;
+    height: 100%;
+    background-color: lightcyan;
+    display: flex;
+    align-items: center;
+}
+
+.header_search_input {
+    width: 100% !important;
+    background-color: #636b6d;
+    height: 45px;
+    border-radius: 4px;
+    border: 0;
+    padding: 0 20px;
+    font-weight: 800;
+    color: white;
+}
+
+.header_links_link {
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20%;
+}
+.header_links_envelop_a {
+    box-sizing: border-box;
+    height: 100%;
+    /* width: ; */
+}
