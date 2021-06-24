@@ -1,0 +1,11 @@
+.app_container_cover_free {
+    width: 300px;
+    background-color: lightcyan;
+    height: 100%;
+}
+
+.app_container {
+    width: 100%;
+    background-color: lightcoral;
+    height: 100vh;
+}

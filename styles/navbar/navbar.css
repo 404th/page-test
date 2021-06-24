@@ -46,7 +46,12 @@ header {
 }
 
 .header_brand_text {
+    color: white;
+    text-decoration: none !important;
     font-weight: 800;
+}
+
+.header_brand_text:hover {
     color: white;
 }
 
