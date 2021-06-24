@@ -49,6 +49,7 @@ header {
     color: white;
     text-decoration: none !important;
     font-weight: 800;
+    font-size: 25px;
 }
 
 .header_brand_text:hover {
@@ -149,7 +150,7 @@ header {
     }
 
     .header_brand_text {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .header_links_link {
@@ -164,7 +165,7 @@ header {
     }
 
     .header_brand_text {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .header_links_link {
