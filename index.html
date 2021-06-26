@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/all.min.css" />
         <link rel="stylesheet" href="css/fontawesome.min.css" />
         <script
-            src="https://kit.fontawesome.com/a076d05399.js"
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
             crossorigin="anonymous"
         ></script>
         <!-- Styles -->
@@ -152,14 +152,14 @@
                                 </div>
                             </button>
                             <div
-                                class="dropdown-menu"
+                                class="dropdown-menu profile_dropdown"
                                 aria-labelledby="dropdownMenu2"
                             >
                                 <button class="dropdown-item" type="button">
                                     Action
                                 </button>
                                 <button class="dropdown-item" type="button">
-                                    Another action
+                                    Another actionsidebar_icons_icon centering
                                 </button>
                                 <button class="dropdown-item" type="button">
                                     Something else here
@@ -176,31 +176,41 @@
                 <ul>
                     <li>
                         <a href="/">
-                            <i class="fa fa-home fa-2x"></i>
+                            <div class="sidebar_icons_icon centering">
+                                <i class="fa fa-home fa-2x"></i>
+                            </div>
                             <span class="nav-text"> Dashboard </span>
                         </a>
                     </li>
                     <li class="has-subnav">
                         <a href="#">
-                            <i class="fa fa-laptop fa-2x"></i>
+                            <div class="sidebar_icons_icon centering">
+                                <i class="fa fa-laptop fa-2x"></i>
+                            </div>
                             <span class="nav-text"> Stars Components </span>
                         </a>
                     </li>
                     <li class="has-subnav">
                         <a href="#">
-                            <i class="fa fa-list fa-2x"></i>
+                            <div class="sidebar_icons_icon centering">
+                                <i class="fa fa-list fa-2x"></i>
+                            </div>
                             <span class="nav-text"> Forms </span>
                         </a>
                     </li>
                     <li class="has-subnav">
                         <a href="#">
-                            <i class="fa fa-folder-open fa-2x"></i>
+                            <div class="sidebar_icons_icon centering">
+                                <i class="fa fa-folder-open fa-2x"></i>
+                            </div>
                             <span class="nav-text"> Pages </span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa fa-bar-chart-o fa-2x"></i>
+                            <div class="sidebar_icons_icon centering">
+                                <i class="fa fa-bar-chart-o fa-2x"></i>
+                            </div>
                             <span class="nav-text">
                                 Graphs and Statistics
                             </span>
@@ -208,25 +218,33 @@
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa fa-font fa-2x"></i>
+                            <div class="sidebar_icons_icon centering">
+                                <i class="fa fa-font fa-2x"></i>
+                            </div>
                             <span class="nav-text"> Quotes </span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa fa-table fa-2x"></i>
+                            <div class="sidebar_icons_icon centering">
+                                <i class="fa fa-table fa-2x"></i>
+                            </div>
                             <span class="nav-text"> Tables </span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa fa-map-marker fa-2x"></i>
+                            <div class="sidebar_icons_icon centering">
+                                <i class="fa fa-map-marker fa-2x"></i>
+                            </div>
                             <span class="nav-text"> Maps </span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa fa-info fa-2x"></i>
+                            <div class="sidebar_icons_icon centering">
+                                <i class="fa fa-info fa-2x"></i>
+                            </div>
                             <span class="nav-text"> Documentation </span>
                         </a>
                     </li>
@@ -235,7 +253,9 @@
                 <ul class="logout">
                     <li>
                         <a href="#">
-                            <i class="fa fa-power-off fa-2x"></i>
+                            <div class="sidebar_icons_icon centering">
+                                <i class="fa fa-power-off fa-2x"></i>
+                            </div>
                             <span class="nav-text"> Logout </span>
                         </a>
                     </li>
@@ -528,16 +548,114 @@
                                         class="
                                             app_container_cover_second_articles_card_header_button
                                         "
+                                        type="button"
+                                        data-toggle="modal"
+                                        data-target="#addToDoModal"
                                     >
                                         +
                                     </button>
+                                    <!-- Modal -->
+                                    <div
+                                        class="modal fade"
+                                        id="addToDoModal"
+                                        tabindex="-1"
+                                        role="dialog"
+                                        aria-labelledby="addToDoModalTitle"
+                                        aria-hidden="true"
+                                    >
+                                        <div
+                                            class="
+                                                modal-dialog
+                                                modal-dialog-centered
+                                            "
+                                            role="document"
+                                        >
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5
+                                                        class="modal-title"
+                                                        id="exampleModalLongTitle"
+                                                    >
+                                                        Add ToDo
+                                                    </h5>
+                                                    <button
+                                                        type="button"
+                                                        class="close"
+                                                        data-dismiss="modal"
+                                                        aria-label="Close"
+                                                    >
+                                                        <span aria-hidden="true"
+                                                            >&times;</span
+                                                        >
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label
+                                                                for="formGroupTodoItemTitle"
+                                                                >Todo
+                                                                title</label
+                                                            >
+                                                            <input
+                                                                type="text"
+                                                                class="
+                                                                    form-control
+                                                                "
+                                                                autocomplete="off"
+                                                                id="formGroupTodoItemTitle"
+                                                                placeholder="Title"
+                                                            />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label
+                                                                for="formGroupTodoItemBody"
+                                                                >Todo
+                                                                body</label
+                                                            >
+                                                            <input
+                                                                type="text"
+                                                                class="
+                                                                    form-control
+                                                                "
+                                                                autocomplete="off"
+                                                                id="formGroupTodoItemBody"
+                                                                placeholder="Body..."
+                                                            />
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button
+                                                    class="
+                                                        btn btn-secondary
+                                                    "
+                                                        type="button"
+                                                        data-dismiss="modal"
+                                                        id="todo_add_close"
+                                                    > 
+                                                        Close
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-primary"
+                                                        type="button"
+                                                        id="todo_add"
+                                                    >
+                                                        Add
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div
                                     class="
                                         card-body
                                         app_container_cover_second_articles_card_body
                                     "
+                                    id="add_container_cover_second_articles"
                                 >
+                                <!-- todo item -->
                                     <div
                                         class="
                                             app_container_cover_second_articles_card_body_todo
@@ -621,91 +739,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div
-                                        class="
-                                            app_container_cover_second_articles_card_body_todo
-                                        "
-                                    >
-                                        <div
-                                            class="
-                                                app_container_cover_second_articles_card_body_todo_cover
-                                            "
-                                        >
-                                            <div
-                                                class="
-                                                    app_container_cover_second_articles_card_body_todo_cover_btn
-                                                "
-                                            >
-                                                <svg
-                                                    class="
-                                                        app_container_cover_second_articles_card_body_todo_cover_btn_svg
-                                                    "
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="16"
-                                                    height="16"
-                                                    fill="currentColor"
-                                                    class="bi bi-grip-vertical"
-                                                    viewBox="0 0 16 16"
-                                                >
-                                                    <path
-                                                        d="M7 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
-                                                    />
-                                                </svg>
-                                            </div>
-                                            <div
-                                                class="
-                                                    app_container_cover_second_articles_card_body_todo_cover_title
-                                                    truncate
-                                                "
-                                            >
-                                                Hello world! What re u doing
-                                                now? What's up? Lorem ipsum
-                                                dolor sit amet consectetur
-                                                adipisicing elit. Iure,
-                                                pariatur!
-                                            </div>
-                                            <div
-                                                class="
-                                                    app_container_cover_second_articles_card_body_todo_cover_space
-                                                "
-                                            ></div>
-                                            <div
-                                                class="
-                                                    app_container_cover_second_articles_card_body_todo_cover_confirm
-                                                "
-                                            >
-                                                <button>
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="16"
-                                                        height="16"
-                                                        fill="currentColor"
-                                                        class="bi bi-check"
-                                                        viewBox="0 0 16 16"
-                                                    >
-                                                        <path
-                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
-                                                        />
-                                                    </svg>
-                                                </button>
-                                                <button>
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="16"
-                                                        height="16"
-                                                        fill="currentColor"
-                                                        class="bi bi-x"
-                                                        viewBox="0 0 16 16"
-                                                    >
-                                                        <path
-                                                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
-                                                        />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div><!-- !todo_item -->
 
                                     <div
                                         class="
@@ -1014,8 +1048,8 @@
                                     <div class="calendar">
                                         <div class="front">
                                             <div class="current-date">
-                                                <h1>Friday 15th</h1>
-                                                <h1>January 2016</h1>
+                                                <h1>Friday 31st</h1>
+                                                <h1>February 2021</h1>
                                             </div>
 
                                             <div class="current-month">
@@ -1104,8 +1138,8 @@
                                                     <p class="info-date">
                                                         Date:
                                                         <span
-                                                            >Jan 15th,
-                                                            2016</span
+                                                            >Feb 31st,
+                                                            2021</span
                                                         >
                                                     </p>
                                                     <p class="info-time">
@@ -1117,8 +1151,7 @@
                                                     <p>
                                                         Address:
                                                         <span
-                                                            >129 W 81st St, New
-                                                            York, NY</span
+                                                            >Fido buisness</span
                                                         >
                                                     </p>
                                                 </div>
@@ -1255,6 +1288,8 @@
         ></script>
         <script src="./scripts/main/statistics.js"></script>
         <script src="./scripts/calendar/calendar.js"></script>
+        <script src="./scripts/http/req.js"></script>
+        <script src="./const.js"></script>
 
         <script src="./main.js"></script>
     </body>

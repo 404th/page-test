@@ -2,7 +2,7 @@ var app = {
     settings: {
         container: $(".calendar"),
         calendar: $(".front"),
-        days: $(".weeks span"),
+    days: $(".weeks span"),
         form: $(".back"),
         input: $(".back input"),
         buttons: $(".back button"),

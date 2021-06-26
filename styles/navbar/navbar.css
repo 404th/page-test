@@ -28,6 +28,8 @@ header {
     min-height: 100px;
     background-color: #222831;
     padding: 1px;
+    display: grid !important;
+    align-items: center !important;
 }
 
 .header_container {
@@ -113,6 +115,11 @@ header {
     background-color: #222831;
 }
 
+.header_profile_dropdown_button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 .header_profile_dropdown_button_avatar {
     width: 100%;
     height: 100%;
@@ -142,6 +149,20 @@ header {
 
 .dropdown-toggle::after {
     display: none !important;
+}
+
+.dropdown-menu.profile_dropdown.show {
+    background-color: #222831;
+}
+
+.profile_dropdown > button {
+    background-color: #222831;
+    color: white;
+}
+
+.profile_dropdown > button:hover {
+    background-color: #0d0f11;
+    color: white;
 }
 
 @media (max-width: 1000px) {

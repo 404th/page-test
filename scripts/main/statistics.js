@@ -27,18 +27,17 @@ function drawChart() {
 
 function drawChart2() {
     var data = google.visualization.arrayToDataTable([
-        ["Year", "Sales", "Expenses"],
-        ["2004", 1000, 400],
-        ["2005", 1170, 460],
-        ["2006", 660, 1120],
-        ["2007", 1030, 540],
+        ["Year", "Users", "Admins"],
+        ["2018", 1000, 400],
+        ["2019", 1170, 460],
+        ["2020", 660, 1120],
+        ["2021", 1030, 540],
     ]);
 
     var options = {
         title: "Company Performance",
         curveType: "function",
         legend: { position: "bottom" },
-        // width: 100,
         height: 300,
     };
 
@@ -48,3 +47,7 @@ function drawChart2() {
 
     chart.draw(data, options);
 }
+
+window.addEventListener("resize", () => {
+    location.reload();
+});
