@@ -4,6 +4,7 @@ document.getElementById("todo_add").addEventListener("click", () => {
     PostArticle();
 });
 
+// to delete an to do item
 async function deleteTodo(id) {
     try {
         await fetch(`${SERVER_URL}/article/${id}`, {
@@ -24,6 +25,7 @@ async function deleteTodo(id) {
     }
 }
 
+// to post to do
 async function PostArticle() {
     let todo = {
         title: "",
@@ -80,6 +82,7 @@ async function GetAllArticles(url) {
     }
 }
 
+// todo item creator
 function makeTodoItem(data) {
     let allTodo = "";
     for (let item of data) {
@@ -95,40 +98,12 @@ function makeTodoItem(data) {
                                     width="16"
                                     height="16"
                                     fill="currentColor"
-                                    data-toggle="modal"
-                                    data-target="#` +
-            item._id +
-            `"
                                     viewBox="0 0 16 16"
                                 >
                                     <path
                                         d="M7 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
                                     />
                                 </svg>
-                                <div class="modal fade id="` +
-            item._id +
-            `" tabindex="-1" aria-labelledby="` +
-            item._id +
-            `Label" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="` +
-            item._id +
-            `Label">Modal title</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
                             </div>
                             <div class=" app_container_cover_second_articles_card_body_todo_cover_title truncate">` +
             item.title +
@@ -177,6 +152,7 @@ function makeTodoItem(data) {
     element.innerHTML = allTodo.trim();
 }
 
+// To show to do list
 GetAllArticles(SERVER_URL);
 
 function aboutTodo() {
