@@ -82,6 +82,25 @@ async function GetAllArticles(url) {
     }
 }
 
+async function firstThree() {
+    try {
+        await fetch(`${url}/article`)
+            .then((res) => res.json())
+            .then((res) => res)
+            .catch((err) => console.log(err));
+
+        if (arts.errors.length !== 0) {
+            throw new Error("Error occured!");
+        } else {
+            if (arts.data.value.length > 1) {
+                makeTodoItem(arts.data.value.reverse().slice(0, 3));
+            } else {
+                makeTodoItem(arts.data.value);
+            }
+        }
+    } catch (err) {}
+}
+
 // todo item creator
 function makeTodoItem(data) {
     let allTodo = "";
